@@ -16,27 +16,39 @@
         <!--Barra de logo portal-->
         <a href="index.html" style="text-decoration: none;">
             <div class="header-page">
-                <img src="img/dine.png" alt="logo" class="logo"> 
-                    <h2 class=" titulosup">Dirección Nacional</h2>
-                    <h2 class=" titulosup">Electoral</h2>
+                <img src="img/dine.png" alt="logo" class="logo">
+                <h2 class=" titulosup">Dirección Nacional</h2>
+                <h2 class=" titulosup">Electoral</h2>
             </div>
         </a>
         <!--Barra de menú principal-->
         <ul class="barra1">
+            <form action="#">
+                <label for="seleccionable">Año</label>
+                <select name="año">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <label for="seleccionable">Cargo</label>
+                <select name="cargo">
+                    <option value="pres">Presidente</option>
+                    <option value="gob">Gobernador</option>
+                    <option value="int">Intendente</option>
+                </select>
+                <label for="seleccionable">Distrito</label>
+                <select name="distric">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Cordoba">Cordoba</option>
+                </select>
+            </form>
+            <label for="buscar">
+                <img src="img/icons/lupa.svg" alt="iconosvg" class="iconlupa">
+                <input type="text" class="filtro" value="filtrar" placeholder="FILTRAR">
+            </label>
             <li><a class="active" href="informes.html">INFORMES</a></li>
-            <!-- <li><a href="##">CONTACTO</a> </li>-->
-            <li><a> BUSCAR</a></li>
-
-            <label for="seleccionable">Año</label>  
-            <select name="seleccionable" id="seleccionable"
-                <option value="2021">2021 </option>
-
-            <label for="seleccionable">Cargo</label> 
-                <select name="seleccionable" id="seleccionable"
-                           
-
-            <label for="seleccionable">Distrito</label>  
-                <select name="seleccionable" id="seleccionable2"
+            <li><a class="BotonInicio" href="index.html">INICIO</a> </li>
         </ul>
     </header>
     <!-- Contenido principal de la página -->
@@ -59,7 +71,6 @@
                         porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art. 45
                         Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores residentes
                         en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a href="#">Términos y Condiciones</a>.”</p>
-
                 </div>
             </footer>
             </body>
