@@ -172,3 +172,65 @@ select{
     background-color: rgb(86, 97, 255);
     
 }
+.chart-wrap.vertical{
+    --chart-width:420px;
+        --grid-color:#aaa;
+        --bar-color:rgb(111, 199, 255);
+        --bar-thickness:40px;
+        --bar-rounded: 3px;
+        --bar-spacing:10px;
+ 
+        font-family:sans-serif;
+        width:var(--chart-width);
+    }
+ 
+    .chart-wrap .title{
+        font-weight:bold;
+        padding:1.8em 0;
+        text-align:center;
+        white-space:nowrap;
+    }
+ 
+    .chart-wrap .grid{
+        margin-left:50px;
+        position:relative;
+        padding:5px 0 5px 0;
+        height:100%;
+        width:100%;
+        border-left:2px solid rgb(111,199,255);
+    }
+    .chart-wrap .grid::before{
+        font-size:0.8em;
+        font-weight:bold;
+        content:'0%';
+        position:absolute;
+        left:-0.5em;
+        top:-1.5em;
+    }
+    .chart-wrap .grid::after{
+        font-size:0.8em;
+        font-weight:bold;
+        content:'100%';
+        position:absolute;
+        right:-1.5em;
+        top:-1.5em;
+    }
+    .chart-wrap .bar {
+        width: var(--bar-value);
+        height:var(--bar-thickness);
+        margin:var(--bar-spacing) 0;
+        background-color:var(--bar-color);
+        border-radius:0 var(--bar-rounded) var(--bar-rounded) 0;
+    }
+ 
+    .chart-wrap .bar:hover{
+        opacity:0.7;
+    }
+ 
+    .chart-wrap .bar::after{
+        content:attr(data-name);
+        margin-left:100%;
+        padding:10px;
+        display:inline-block;
+        white-space:nowrap;
+    }
