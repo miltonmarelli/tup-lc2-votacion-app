@@ -1,3 +1,6 @@
+body{
+    background-color: white; /*reajusto color fondo para que quede como en imagen ejemplo*/
+}
 #sec-titulo{
     display: flex;
     width: 70%;
