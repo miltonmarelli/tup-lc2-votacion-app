@@ -23,32 +23,27 @@
         </a>
         <!--Barra de menú principal-->
         <ul class="barra1">
-            <form action="#">
-                <label for="seleccionable">Año</label>
-                <select name="año">
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                </select>
-                <label for="seleccionable">Cargo</label>
-                <select name="cargo">
-                    <option value="pres">Presidente</option>
-                    <option value="gob">Gobernador</option>
-                    <option value="int">Senadores nacionales</option>
-                </select>
-                <label for="seleccionable">Distrito</label>
-                <select name="distric">
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Santa Fe">Santa Fe</option>
-                    <option value="Cordoba">Cordoba</option>
-                </select>
-            </form>
-            <label for="buscar">
+            <div class="seleccionables">
+                <form action="#">
+                    <select name="año">
+                        <option value="none">Año</option>
+                    </select>
+                    <select name="cargo">
+                        <option value="pres">Cargo</option>
+                    </select>
+                    <select name="distric">
+                        <option value="Distrito">Distrito</option>
+                    </select>
+                </form>
+            </div>
+            <label for="buscar" class="filtro">
                 <img src="img/icons/lupa.svg" alt="iconosvg" class="iconlupa">
-                <input type="text" class="filtro" value="filtrar" placeholder="FILTRAR">
+                <input type="text" class="filtro1" value="filtrar" placeholder="FILTRAR">
             </label>
             <li><a class="active" href="informes.html">INFORMES</a></li>
-            <li><a class="BotonInicio" href="index.html">INICIO</a> </li>
+            <div class="inic_boton">
+                <li><a class="BotonInicio" href="index.html">INICIO</a> </li>
+            </div>
         </ul>
     </header>
     <!-- Contenido principal de la página -->
@@ -57,20 +52,46 @@
            <h2> Elecciones 2021 | Generales </h2>
            <h5>2021 > Generales> Provisorio> Senadores nacionales</h5>
     </section>
-        <section id="contenido">
-            <div id="lateal">(izquierdo)
-                con float left 
-                <img svr="char_wrap.svg"> 
-                </div>
-                <div id="central">
-                con float left y margen left  de 100px para que se vaya al centro
-                <img srv="bs_as.svg" alt="iconocsvg", class="mapas">
-                </div>
-                <div id="otrolado">("derecho")
-                con float right para que se acomode hasta la orilla
-                <img svr="">
-                </div>
-        </section>
+    <section id="Cont_botonera">
+        <div class="boton_inf">
+            <a href="#">
+                <button class="boton_informe">
+                    + Agregar a Informe
+                </button>
+            </a>
+            <div class="div_botones">
+            <div class="boton1">
+                <a href="#">
+                    <button class="mesas_computadas">
+                        <img src="img/icons/img.svg" alt="iconosvg" class="icon_botones"> Mesas Computadas
+                        2,586
+                    </button>
+                </a>
+            </div>
+            <div class="boton2">
+                <a href="#">
+                    <button class="Electores">
+                        <img src="img/icons/manitos.svg" alt="iconosvg" class="icon_botones">Electores
+                        876,580
+                    </button>
+                </a>
+            </div>
+            <div class="boton3">
+                <a href="#">
+                    <button class="p_escriturado">
+                        <img src="img/icons/personitas.svg" alt="iconosvg" class="icon_botones">Participacion Sobre
+                        Escriturado
+                        65,2%
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mapacorrientes">
+            <svg height="210" width="800"><path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M106 135L108 138L109 135L116 136L122 132L123 133L131 130L139 134L143 141L148 145L147 139L151 137L153 133L152 131L154 131L159 126L160 121L168 117L169 114L174 109L176 103L180 102L183 95L186 93L189 87L192 86L193 83L197 85L195 80L197 80L198 78L194 73L194 69L188 60L189 58L186 57L180 64L177 60L174 60L173 62L170 60L164 61L145 55L130 56L127 58L124 61L126 69L125 72L123 77L120 77L119 80L120 91L117 100L116 102L114 102L112 106L110 106L108 111L108 117L106 121L109 127L106 133L107 135z"></path></svg>
+        </div>
+    </section>
        
     </main>
             <!--Pie de página-->
