@@ -1,55 +1,203 @@
-
-    .grid-container{
-        display: grid;
-        grid-template-columns:300px 1000px 110px 1px;
-        background-color: rgb(212, 212, 212);
-        overflow-y: scroll;
-        border: 1px solid gray;
-        
-    }
-
- 
-.tex1{
-    position: relative;
-    right: 900px;
+.boton{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color:#FFffFF;
+    font-size: 200;
+    text-align: center;
 }
-.tex2{
-    position: relative;
-    right: 1150px;
+#boton_1{
+    background-color: green;
+    align-content: center;
+    
+}
+#boton_2{
+    background-color: rgba(255, 34, 34, 0.8);
+    align-content: center;
+}
+#boton_3{
+    background-color: yellow;
+    align-content: center;
+
 }
 
+.tabla,.porcentajes,.candidatos{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
 
-.active1{
-   position:relative;
-   right: 1010px;
-   background-color: rgb(165, 12, 63);
-   padding: 8px;
-   border-radius: 10px;
-   width: 80px;
-   text-align: center;
+}
+.tabla{
+    background-color: rgb(201, 201, 201);
+    color: rgb(49, 49, 49);
+    border-radius: 10px;
+}
+
+.cons{
+    color: white;
+    justify-content: flex-start;
+    position: relative;
+    right: 990px;
+}
+#sec-contenido{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex;
+    border-radius: 10px;
+    overflow-y: scroll;
+
+}
+.botones{
+    display: inline-flex;
+    width: 70px;
+    height: 110px;
+    color:#FFffFF;
+    margin: 10px;
+    padding-left: 7%;
+    position: relative;
+    right: 200px;
+}
+.electores{
+    background-color: #e90d82;
+    border-radius: 10px;
+    color:white;
    
 }
-.active2{
-    position: relative;
-    right: 1095px;
-    background-color: rgb(8, 178, 178);
-    padding: 8px;
-    text-align: center;
+.p_escriturado {
+    background-color: rgb(112, 76, 159);
     border-radius: 10px;
-    width: 80px;
+    color: white;
+    
+}
+
+.mesas_computadas{
+    background-color:  rgba(79, 173, 255, 0.932);
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.icon_botones
+{
+    height: 50px;
+}
+.porcentajes{
+    display:block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 50%;
+    font-size: x-small;
+    position: relative;
+    bottom: 43px;
+}
+.candidatos{
+    display:block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 100px;
+    position: relative;
+    right: 190px;
+    top: 70px;
+    font-size: small;
+    margin-bottom: 1px;
+}
+
+.contenido{
+    border-radius:  2px;
+    background-color: gainsboro;
+}
+.elecc{
+    justify-content: flex-start;
+    align-items: center;
+    }
+.svg{
+    padding-left: 100px;
+    padding: 50px;
+    margin: 10px;
+    width: 450px ;
+    height:200px ;
+    
+}
+.descrip{
+    padding-left: 15%;
+    align-items: center;
+}
+.active1{
+    background-color:magenta ;
+    color:white;
+    justify-content: flex-start;
+    position: relative;
+    right: 1020px;
+    font-size: medium;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.active2{
+    background-color:aqua ;
+    color:white;
+    justify-self: flex-start;
+    font-size: medium;
+    position: relative;
+    right: 1100px;
+    padding: 5px;
+    border-radius: 10px;
 
 }
 .active3{
-    
-    background-color: rgb(198, 210, 210);
-    padding: 8px;
-    text-align: center;
+    background-color:gainsboro ;
+    color:rgb(0, 0, 0);
+    justify-content: flex-end;
+    font-size: medium;
+    padding: 5px;
     border-radius: 10px;
-    width: 80px;
-    right: 10px;
-
 }
-.img1{
+.pala1{
+    color: blue;
+    font-size: small;
     position: relative;
-    right: 10px;
+    right: 70px;
+    top: 10px;
+}
+.pala2{
+    color: blue;
+    font-size: small;
+    position: relative ;
+    bottom: 18px;
+    right: 135px;
+}
+.pala3{
+    color: blue;
+    font-size: small;
+    position: relative ;
+    bottom: 46px;
+    right: 200px;
+}
+.pala4{
+    color: blue;
+    font-size: small;
+    position: relative ;
+    bottom: 74px;
+    right: 35px;
+}
+.pala-grande{
+    font-size:larger;
+    position: relative;
+    right: 200px;
+    top: 20px;
+}
+#electores{
+    background-color:#e90d82 ;
+    
+}
+.svg{
+    position: relative;
+    right: 50px;
 }
